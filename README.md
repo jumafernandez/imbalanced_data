@@ -13,7 +13,6 @@ Repositorio con los avances del Doctorado:
 - Relevamientos.
 
 <br />
-<br />
 Juan Manuel Fernández <br />
 Departamento de Ciencias Básicas <br />
 Universidad Nacional de Luján
