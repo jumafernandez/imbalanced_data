@@ -10,7 +10,7 @@ Repositorio con los avances del Doctorado:
 - Notebooks,
 - Scripts,
 - Manuales,
-- Relevamiento.
+- Relevamientos.
 
 
 Juan Manuel Fernández
