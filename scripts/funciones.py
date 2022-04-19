@@ -126,8 +126,11 @@ def representacion_documentos(textos, estrategia, MAX_TKS=None):
         vectorizer = CountVectorizer(max_features=MAX_TKS)
     
     # Entrenamos el vectorizer para train y test
-    df_vectorizado = vectorizer.fit_transform(textos)
+    correos_vectorizados = vectorizer.fit_transform(textos)
 
+    # Convertimos las matrices ralas a series para concaterlas con los df originales luego
+    df_vectorizado = pd.DataFrame.sparse.from_spmatrix(correos_vectorizados, columns=vectorizer.get_feature_names())
+    
     return df_vectorizado
 
 
