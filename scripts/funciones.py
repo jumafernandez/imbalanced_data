@@ -131,7 +131,6 @@ def representacion_documentos(textos, estrategia, MAX_TKS=None):
     
     # Entrenamos el vectorizer para train y test
     df_vectorizado = vectorizer.fit_transform(textos)
-    print(f'tipo: {type(df_vectorizado)}')
 
     return df_vectorizado
 
@@ -184,7 +183,7 @@ def load_correos_etiquetados(TIPO='train', ESTATICAS=False, REPRESENTACION=False
     min_max_scaler = MinMaxScaler()
     X = df
     columnas_numericas = list(X.select_dtypes(include=np.number).columns)
-    print(f'{columnas_numericas}')
+
     X[columnas_numericas] = min_max_scaler.fit_transform(df[columnas_numericas])
 
     return X, y
